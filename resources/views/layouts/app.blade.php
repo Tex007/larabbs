@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'LaraBBS') - Laravel </title>
+    <title>@yield('title', 'LaraBBS') - larabbs</title>
+    <meta name="description" content="@yield('description', '飞单 让交易变得更简单')" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
