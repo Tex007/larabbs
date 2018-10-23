@@ -5,11 +5,17 @@ return array(
     // 后台的 URI 入口
     'uri' => 'admin',
 
+    // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
+    'login_path' => 'permission-denied',
+
     // 后台专属域名，没有的话可以留空
     'domain' => '',
 
     // 应用名称，在页面标题和左上角站点名称处显示
     'title' => env('APP_NAME', 'Laravel'),
+
+    // 用来作为后台主页的菜单条目，由 `use_dashboard` 选项决定，菜单指的是 `menu` 选项
+    'home_page' => 'topics',
 
     // 模型配置信息文件存放目录
     'model_config_path' => config_path('administrator'),
@@ -49,6 +55,7 @@ return array(
         ],
         '站点管理' => [
             'settings.site',
+            'links',
         ],
     ],
 
