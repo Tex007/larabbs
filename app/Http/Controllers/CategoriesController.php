@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Link;
 
 class CategoriesController extends Controller
 {
